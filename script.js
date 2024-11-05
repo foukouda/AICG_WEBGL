@@ -140,7 +140,7 @@ float rayMarch(vec3 ro, vec3 rd, out vec3 color) {
     color = vec3(0.0);
     return -1.0;
 }
-c
+
 void main() {
     vec2 uv = (gl_FragCoord.xy / vec2(800.0, 600.0)) * 2.0 - 1.0;
 
