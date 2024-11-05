@@ -1,0 +1,80 @@
+body, html {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: #282c34;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+#fps-counter {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #61dafb;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+#time-display {
+    position: absolute;
+    top: 40px; /* Positioned below the FPS counter */
+    left: 10px;
+    color: #ffc107; /* Yellow color for time display */
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.controls {
+    margin-bottom: 10px;
+}
+
+button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #61dafb;
+    border: none;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #21a1f1;
+}
+
+canvas {
+    width: 80vw;
+    height: 60vh;
+    border: 1px solid #333;
+    margin-bottom: 10px;
+}
+
+#error-box {
+    color: #fd8080;
+    font-weight: bold;
+    font-size: 16pt;
+    border: 1px solid #ffffff;
+    background-color: #2a2a2a;
+    padding: 20px;
+    width: 80vw;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.error-box-title {
+    color: #eeeeee;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+    border-bottom: 1px solid gray;
+}

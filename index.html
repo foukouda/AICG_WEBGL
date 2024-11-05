@@ -1,39 +1,22 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Mon Projet WebGL de Base</title>
-    <style>
-        html, head, body{
-            margin: 0;
-            padding: 25px;
-            background-color: #2a2a2a;
-        }
-        canvas {
-            width: 100%;
-            height: 100%;
-            background-color: #da6052; /*ca apparait ci webgl ne créer pas tout le canva ou quil y a un probleme de transparance */
-        }
-
-        #error-box{
-            color: #fd8080;
-            font-weight: 500;
-            font-size: 18pt;
-            border: 1px solid white;
-            padding : 25px;
-            margin-top: 20px;
-        }
-        .error-box-title{
-            color: #eee;
-            border-bottom: 1px solid gray;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D WebGL Scene with Time Counter, FPS Counter, and Error Box</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <canvas id="canvas"></canvas>
-    <div id="error-box">
-        <span class=" error-box-title">Error messages, if any, go in here</span>
+    <div id="fps-counter">FPS: 0</div>
+    <div id="time-display">Time: 0:00</div> <!-- Time display element -->
+    <div class="controls">
+        <button id="rotate-left">Rotate Left</button>
+        <button id="rotate-right">Rotate Right</button>
     </div>
-    <script src="main.js"></script>
+    <canvas id="glcanvas"></canvas>
+    <div id="error-box">
+        <span class="error-box-title">Error Messages:</span>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
